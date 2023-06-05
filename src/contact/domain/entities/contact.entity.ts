@@ -6,10 +6,30 @@ export class ContactEntity {
     id: number;
     @Column()
     names: string;
-    @Column()
+    @Column({nullable: true})
     lastNames: string;
+    @Column()
+    dni: string;
+    @Column()
+    code: string;
+    @Column()
+    phoneNumber: string;
+    @Column()
+    phoneNumber2: string;
     @Column()
     email: string;
     @Column()
-    phoneNumber: string;
+    email2: string;
+    @Column()
+    school: string;
+    @Column()
+    network: string;
+    @Column()
+    address: string;
+    @Column()
+    status: string;
+    @Column()
+    validation: string;
+    @Column()
+    scope: string;
 }
